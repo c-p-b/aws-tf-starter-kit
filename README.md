@@ -12,7 +12,15 @@ A production-ready Terraform/OpenTofu starter kit for AWS infrastructure with bu
    # Linux/Windows - see https://opentofu.org/docs/intro/install/
    ```
 
-2. **Configure AWS credentials**:
+2. **Install Docker** (required for container deployments):
+   ```bash
+   # macOS
+   brew install docker
+   
+   # Linux/Windows - see https://docs.docker.com/get-docker/
+   ```
+
+3. **Install AWS CLI** and **configure AWS credentials**:
 
    **Option A: AWS CLI Configuration (Quick Start)**
    ```bash
@@ -366,6 +374,7 @@ go test ./tests/...      # Run module tests (requires Go)
 
 - **OpenTofu** or Terraform >= 1.5.0 ([Install OpenTofu](https://opentofu.org/docs/intro/install/))
 - **AWS CLI** configured with credentials ([Install AWS CLI](https://aws.amazon.com/cli/))
+- **Docker** for building and pushing container images ([Install Docker](https://docs.docker.com/get-docker/))
 - **Go** (for testing - optional) ([Install Go](https://golang.org/doc/install))
 - **TFLint** (optional) ([Install TFLint](https://github.com/terraform-linters/tflint))
 - **terraform-docs** (optional) ([Install terraform-docs](https://terraform-docs.io/user-guide/installation/))
