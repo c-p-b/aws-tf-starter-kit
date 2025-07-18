@@ -1,0 +1,1 @@
+../aws-label/input.tf

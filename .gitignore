@@ -1,0 +1,82 @@
+# Terraform/OpenTofu
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform/
+.terraform.lock.hcl
+.terraformrc
+terraform.rc
+# Normally you would check this in, but for demo purposes we'll skip
+backend-config.hcl 
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+test-results/
+coverage/
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temporary files and directories
+.terraform-tmp/
+.terraform-cache/
+*.tfplan
+*.tfplan.*
+plan.out
+plan.json

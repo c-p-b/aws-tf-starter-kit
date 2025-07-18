@@ -1,0 +1,2 @@
+# No external dependencies for basic HTTP server
+# Add dependencies as needed
