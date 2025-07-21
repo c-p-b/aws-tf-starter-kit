@@ -55,6 +55,15 @@ tofu apply
 
 This creates a `backend-config.hcl` file with your S3 bucket details.
 
+If it doesn't get created, just touch one in the root of your directory that looks like this (you get the values when apply is run in bootstrap):
+
+```terraform
+bucket         = "terraform-state-myAccountId-randomShaHash"
+key            = "CHANGE_ME/terraform.tfstate"
+region         = "us-east-1"
+dynamodb_table = "terraform-state-locks"
+encrypt        = true
+```
 ### Step 2: Deploy Your Infrastructure
 
 Now you can deploy any service. Let's start with the Lambda example:
@@ -79,7 +88,7 @@ tofu apply
 - `plan` shows what will be created without making changes
 - `apply` actually creates the AWS resources
 
-📁 **Path structure**: All deployments follow `deploy/{environment}/{service}/`, so the backend config is always 3 levels up (`../../../`)
+📁 **Path structure**: All deployments follow `deploy/{environment}/{service}/`, so the backend config is always 4 levels up (`../../../../`)
 
 ## Choosing Between Lambda, ECS Fargate, and ECS EC2
 

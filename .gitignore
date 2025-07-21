@@ -80,3 +80,5 @@ coverage/
 *.tfplan.*
 plan.out
 plan.json
+
+backend-config.hcl
