@@ -47,7 +47,7 @@ A production-ready Terraform/OpenTofu starter kit for AWS infrastructure with bu
 This creates the S3 bucket and DynamoDB table for storing Terraform state:
 
 ```bash
-cd bootstrap/terraform
+cd deploy/aws/bootstrap/terraform
 tofu init
 tofu apply
 # Type 'yes' when prompted
